@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block titulo %}GitHub{% endblock %}
+
+{% block conteudo %}
+
+<div class="row">
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="{{ usuario['avatar_url'] }}" >
+    </a>
+  </div>
+</div>
+
+<h3>{{ usuario['name'] }}</h3>
+
+{% for repo in repos %}
+	<p> {{ repo["language"] }} - {{ repo['name'] }}</p>
+{% endfor %}
+
+{% endblock %}

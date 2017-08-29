@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> {% block titulo %}{% endblock %} </title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+    		<div class="navbar-header">
+    			<a id="nav-title" class="navbar-brand">Minicurso Flask</a>
+    		</div>
+    	</div>
+	</nav>
+	{% block conteudo %}{% endblock %}
+	<nav class="navbar navbar-default navbar-fixed-bottom">
+  		<div class="container">
+  			<h5 id="total" class="text-right">Feito com Flask ♥</h4>
+  		</div>
+	</nav>
+</body>
+</html>
